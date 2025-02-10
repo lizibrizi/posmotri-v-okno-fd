@@ -1,1 +1,1 @@
-https://github.com/lizibrizi/posmotri-v-okno-fd.git
+https://github.com/lizibrizi/posmotri-v-okno-fd

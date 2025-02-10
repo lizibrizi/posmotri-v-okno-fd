@@ -32,6 +32,9 @@ video {
 }
 
 .page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   block-size: 100%;
   margin: auto;
   color: #fff;
@@ -42,9 +45,12 @@ video {
 }
 
 .content {
-  display: flex;
-  gap: 30px;
-  margin: 133px 30px;
+  display: grid;
+  grid-template-columns: 711px 399px;
+  grid-template-areas: "result content__details";
+  column-gap: 30px;
+  justify-content: center;
+  align-content: center;
 }
 
 .result {
@@ -299,4 +305,3 @@ video {
   clip-path: inset(50%);
   white-space: nowrap;
 }
-

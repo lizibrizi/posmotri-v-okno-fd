@@ -39,9 +39,9 @@ video {
   margin: auto;
   color: #fff;
   font-family: "Fira Sans Condensed", sans-serif;
-  inline-size: 1200px;
   font-size: 18px;
   background-color: #1b1919;
+  inline-size: 1140px;
 }
 
 .content {
@@ -51,6 +51,7 @@ video {
   column-gap: 30px;
   justify-content: center;
   align-content: center;
+  inline-size: 1140px;
 }
 
 .result {
@@ -60,6 +61,7 @@ video {
 .result__video-container {
   position: relative;
   inline-size: 711px;
+  block-size: 386px;
   margin: 0 0 16px;
 }
 
@@ -109,9 +111,9 @@ video {
 
 .search-form__textfield {
   border-top: 1px solid #fff;
-  border-right: none;
+  border-right: 1px solid transparent;
   border-bottom: 1px solid #fff;
-  border-left: none;
+  border-left: 1px solid transparent;
   inline-size: 225px;
   padding: 2.5px 0;
   font-family: inherit;
@@ -119,6 +121,7 @@ video {
   font-size: inherit;
   background-color: transparent;
   appearance: none;
+  color: rgba(255, 255, 255, 0.7);
 }
 
 .search-form__textfield::placeholder {
@@ -129,7 +132,10 @@ video {
 }
 
 .search-form__textfield:active {
-  outline: 1px solid #fff;
+  border-top: 1px solid transparent;
+  border-right: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+  border-left: 1px solid transparent;
 }
 
 .search-form__textfield:focus {
@@ -211,7 +217,7 @@ video {
 .content__list-container {
   position: relative;
   overflow-y: auto;
-  height: 298px;
+  block-size: 298px;
 }
 
 .custom-scrollbar::-webkit-scrollbar {
@@ -226,15 +232,15 @@ video {
   background-color: #d9d9d9;
 }
 
-.content__list-item {
-  padding: 3px;
-  margin: 0 0 30px;
+.content__list-item:not(:last-child) {
+  margin-bottom: 30px;
 }
 
 .content__card-link {
   display: block;
-  margin: 3px;
   text-decoration: none;
+  inline-size: 390px;
+  block-size: 103px;
 }
 
 .content__card-link:active {
@@ -263,7 +269,6 @@ video {
 }
 
 .content__video-card-title {
-  padding: 2px 2px 6px;
   color: #fff;
   font-family: Oswald, sans-serif;
   font-weight: 700;
@@ -271,6 +276,7 @@ video {
   line-height: 1;
   text-transform: uppercase;
   hyphens: auto;
+  padding-bottom: 6px;
 }
 
 .content__video-card-description {
@@ -283,16 +289,20 @@ video {
 .content__video-card-description-container {
   display: flex;
   flex-direction: column;
-  flex-grow: 1;
+  align-items: flex-start;
+  inline-size: 196px;
+  block-size: 103px;
 }
 
 .content__video-card-thumbnail {
   inline-size: 194px;
+  block-size: 103px;
   object-fit: cover;
   object-position: center;
 }
 
 .more-button {
+  margin-top: 30px;
   padding: 6px 142px;
 }
 

@@ -132,10 +132,7 @@ video {
 }
 
 .search-form__textfield:active {
-  border-top: 1px solid transparent;
-  border-right: 1px solid transparent;
-  border-bottom: 1px solid transparent;
-  border-left: 1px solid transparent;
+  border: 1px solid #fff;
 }
 
 .search-form__textfield:focus {
